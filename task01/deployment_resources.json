@@ -45,5 +45,16 @@
     "allowed_accounts": [
       "${account_id}"
     ]
+  },
+  "hello_world-role": {
+    "predefined_policies": [],
+    "principal_service": "lambda",
+    "custom_policies": [
+      "lambda-basic-execution"
+    ],
+    "resource_type": "iam_role",
+    "allowed_accounts": [
+      "${account_id}"
+    ]
   }
 }

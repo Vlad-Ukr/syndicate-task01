@@ -7,12 +7,12 @@ import com.syndicate.deployment.annotations.lambda.LambdaHandler;
 import java.util.HashMap;
 import java.util.Map;
 
-@LambdaHandler(lambdaName = "cmtr-fa9f2639-hello_world-test",
-	roleName = "cmtr-fa9f2639-hello_world-test-role",
+@LambdaHandler(lambdaName = "hello_world",
+	roleName = "hello_world-role",
 	isPublishVersion = true,
 	aliasName = "${lambdas_alias_name}"
 )
-public class CmtrFa9F2639HelloWorldTest implements RequestHandler<Object, Map<String, Object>> {
+public class HelloWorld implements RequestHandler<Object, Map<String, Object>> {
 
 	public Map<String, Object> handleRequest(Object request, Context context) {
 		System.out.println("Hello from lambda");
