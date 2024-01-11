@@ -1,3 +1,10 @@
 account_id: '196241772369'
 lambdas_alias_name: prod
 region: eu-central-1
+apiGateway:
+  - name: HelloWorldApi
+    description: "API Gateway for HelloWorld Lambda"
+    routes:
+      - path: /hello
+        method: GET
+        lambdaName: hello_world
