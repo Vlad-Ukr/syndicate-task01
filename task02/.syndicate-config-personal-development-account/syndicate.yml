@@ -4,13 +4,3 @@ extended_prefix_mode: false
 project_path: D:\Idea\syndicate\repo\task02
 region: eu-central-1
 use_temp_creds: false
-lambdas:
-  hello_world:
-    handler: HelloWorld
-    roleName: hello_world-role
-    isPublishVersion: true
-    aliasName: "${lambdas_alias_name}"
-
-routes:
-  /hello:
-    handler: hello_world
