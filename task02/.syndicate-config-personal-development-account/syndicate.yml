@@ -4,3 +4,10 @@ extended_prefix_mode: false
 project_path: D:\Idea\syndicate\repo\task02
 region: eu-central-1
 use_temp_creds: false
+apiGateway:
+  - name: HelloWorldApi
+    description: "API Gateway for HelloWorld Lambda"
+    routes:
+      - path: /hello
+        method: GET
+        lambdaName: hello_world
